@@ -22,7 +22,7 @@ var Countdown = React.createClass({
         case 'started':
           this.startTimer();
           break;
-        // the stopped case has no break, so the code below paused will execute for both stopped and paused
+        // the stopped case has no break, so the code below "paused" will execute for both "stopped" and "paused"
         case 'stopped':
           this.setState({count: 0});
         case 'paused':
@@ -89,6 +89,7 @@ var Countdown = React.createClass({
 
     return (
       <div>
+        <h1 className="page-title">Countdown App</h1>
         <Clock totalSeconds={count}/>
         {renderControlArea()}
         {renderMessage()}
