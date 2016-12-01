@@ -6,9 +6,7 @@ var Countdown = require('Countdown');
 
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-// Load foundation-sites
-// style! and css! are the loaders we installed for webpack
-require('style!css!foundation-sites/dist/foundation.min.css')
+// Load foundation
 $(document).foundation();
 
 // App css
